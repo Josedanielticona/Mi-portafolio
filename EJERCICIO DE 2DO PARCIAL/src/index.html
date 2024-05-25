@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de contratacion</title>
+    <style>
+        body {
+            background-color: #310052;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            width: 1000px;
+            max-width: 90%;
+        }
+        .left-section {
+            flex: 1;
+            padding: 20px;
+        }
+        .left-section h1 {
+            color: #6a14bf;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .left-section p {
+            font-size: 24px;
+            color: white
+        }
+        .right-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-form {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            width: 300px;
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a14bf;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #6a14bf;
+        }
+        .login-form .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login-form .link a {
+            color: #6a14bf;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>AGRUPACION SUPER KUMBIA VIP</h1>
+            <p>Para todo tipo de acontecimientos: matrimonios, 15 años, bautizos, prestes, cumpleaños privados y muchos mas...</p>
+        </div>
+        <div class="right-section">
+            <form class="login-form">
+                <h2>PARA AGENDAR TU CONTRATO LLENA ESTOS DATOS</h2>
+                <input type="text" placeholder="Tipo de acontecimiento:" required>
+                <input type="password" placeholder="fecha de acontesimiento" required>
+                <input type="submit" value="Acceder a un contrato">
+                <div class="link">
+                    <a href="#">necesito otro tipo de servicio</a>
+                </div>
+                <hr>
+                <div class="link">
+                    <a href="#">Ya obtuve mi contrato</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
